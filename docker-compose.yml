@@ -7,7 +7,7 @@ services:
     links:
     - mongo
     volumes:
-      - ~/project_1/data:/home/jovyan/work
+      - ~/Anitha-trial/data:/home/jovyan/work
   mongo:
     image: mongo
     restart: always
@@ -15,5 +15,5 @@ services:
       MONGO_INITDB_ROOT_USERNAME: dsi_melb
       MONGO_INITDB_ROOT_PASSWORD: padlock
     volumes:
-      - ~/project_1/data/mongodb:/data/db
+      - ~/Anitha-trial/data/mongodb:/data/db
 
